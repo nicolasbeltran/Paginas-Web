@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pre-consulta dengue</title>
+
+<link rel="stylesheet" href="estilofinal.css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="alertify/alertify.core.css" />
+<link rel="stylesheet" href="alertify/alertify.default.css" />
+
+</head>
+
+<body>
+
+
+<nav>
+		<img onClick="inicio()" class="logo" src="imagenesfinal/logo4.png" width="60px" alt="">
+    	<h2 onClick="inicio()" class="logo2">PRID</h2> 
+        <h2 onClick="inicio()" class="logo3">Programa de Registro</h2>
+        <h2 onClick="inicio()" class="logo3">Inclusivo del Dengue</h2>
+        
+	
+	<ul>
+    	<li><a id="inicio" href="index.php">Inicio</a></li>
+        <li><a id="interfaz" href="2interfaz.php">Interfaz</a></li>
+        <li><a id="algoritmo" href="3algoritmo.php">¿Cómo funciona?</a></li>
+        <li><a id="quienes" href="4quienessomos.php">¿Quiénes somos?</a></li>
+        <li><a id="recorrido" href="6recorrido.php">Recorrido del trabajo</a></li>
+        <li><a id="descargas" href="5descargas.php">Descargas</a></li>
+    </ul>
+
+</nav>
+
+
+<main>
+
+	<header><h1>Recorrido</h1></header>
+
+	<section id="objeto">
+    	<h3>El objeto de estudio</h3>
+        <p>En primer lugar, identificamos un marco teórico que funcione como guía para nuestro trabajo y nos ayude a echar luz sobre nuestro objeto de estudio.</p>
+        <p>El objeto de estudio que elegimos para trabajar fue el la enfermedad producida por el dengue a través de la picadura de un mosquito. Nos informamos acerca de los síntomas producidos por dicha enfermedad, como así también las probabilidades de contraerla.</p>
+    </section>
+    <section id="buscando">
+    	<h3>Buscando datos</h3>
+        <p>Nuestro recorrido luego se orientó en buscar distintas bases de datos disponibles en internet. Encontramos una gran cantidad de datos, pero estaban dispersos y eran poco concisos. No existía una plataforma en la cual se encuentren bases de datos acerca del dengue de forma completa y correcta.</p>
+    </section>
+    
+    <section id="objetivo">
+    	<h3>Nuestro objetivo</h3>
+        <p>De este último inconveniente fue que surgió la idea de nuestro proyecto. Comenzamos a reunir una cantidad de bases de datos suficientes con la intención de diagramar un algoritmo que funcione por medio de una plataforma virtual, el cual sea apropiado para consultar y corroborar (por parte de cualquier persona) síntomas y probabilidades de portar la enfermedad.</p>
+    </section>
+    
+    <section id="conclusiones">
+    	<h3>Conclusiones</h3>
+        <p>En conclusión, la página web propuesta por nosotros, se presenta como una suerte de solución al problema de la falta de datos masivos y abiertos de forma actualizada y centralizada sobre el dengue, avalada por una institución gubernamental especializada en la salud. Esto es posible a partir de la consulta preventiva llevada a cabo por los ciudadanos, agilizando de esta manera, el proceso de provisión de turnos y especializándolos en los centros específicos destinados a tratar dicha enfermedad.</p>
+    </section>
+
+</main>
+
+<footer id="footer1" >
+	<section id="links">
+    	<h5>Más información sobre el dengue:</h5>
+        <ul>
+        	<li><a href="http://www.msal.gov.ar/dengue/">Ministerio de Salud de la Nación</a></li>
+            <li><a href="http://www.paho.org/hq/index.php?option=com_content&view=article&id=4493&Itemid=40232&lang=es">Organización Panamericana de la Salud</a></li>
+            <li><a href="http://www.who.int/mediacentre/factsheets/fs117/es/">Organización Mundial de la Salud</a></li>
+            <li><a href="http://idatosabiertos.org/datos-abiertos-y-salud-el-caso-del-dengue/">Iniciativa Latinoamericana de Datos Abiertos</a></li>
+        </ul>
+    </section>
+    
+    <section id="mapasitio">
+    	<h5>Mapa del sitio</h5>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="2interfaz.html">Interfaz</a></li>
+            <li><a href="3algoritmo.html">¿Cómo funciona?</a></li>
+            <li><a href="4quienessomos.html">¿Quiénes somos?</a></li>
+            <li><a href="6recorrido.html">Recorrido del trabajo</a></li>
+            <li><a href="5descargas.html">Descargas</a></li>
+   		</ul>
+    </section>
+    
+    <section id="contacto">
+    	<h5>Contáctenos</h5>
+    	<form action="" method="post">
+        	
+            	<input type="text" name="nombre" id="nombre" value="" placeholder="Nombre"><br/>        
+            	<input type="email" name="mail" id="mail" value="" placeholder="E-mail" required><br/>
+            	<textarea id="comentario" name="comentario" cols="25" rows="2" placeholder="Mensaje"></textarea><br/>      
+            <input id="enviar" name="enviar" type="submit" value="Enviar mensaje">
+        </form>
+        
+			<?php
+				$name = $_POST['nombre'];
+				$email = $_POST['mail'];
+				$message = $_POST['comentario'];
+				$from = 'consulta sobre prid'; 
+				$to = 'nico_beltran_92@hotmail.com'; 
+				$subject = 'consulta sobre prid';
+						
+				$body = "From: $name\n E-Mail: $email\n Message:\n $message";
+							
+				if ($_POST['enviar']) {
+				if (mail ($to, $subject, $body, $from)) { 
+					echo '<p>Tu mensaje fue enviado con éxito</p>';
+				} else { 
+					echo '<p>Hubo un error, inténtalo nuevamente</p>';
+				}
+			}
+			?>
+	</section>
+</footer>
+
+
+
+<footer id="footer2">
+	<p>Página diseñada y desarrollada por <a href="http://www.nicolasbeltran.com.ar" target="_blank" id="desarrollador">Nicolás Beltrán</a></p>
+</footer>
+
+
+
+
+<script type="text/javascript" src="jQuery/jQuery-2.2.3-uncompressed.js"></script>
+<script type="text/javascript" src="alertify/alertify.js"></script>
+<script type="text/javascript" src="js.js" ></script>
+
+
+<script>
+var mensaje = $("#contacto p").html()
+
+if(mensaje=="Tu mensaje fue enviado con éxito"){
+	alertify.success("Tu mensaje fue enviado con éxito");
+	}
+	
+if(mensaje=="Hubo un error, inténtalo nuevamente"){
+	alertify.error("Hubo un error, inténtalo nuevamente");
+	}
+
+</script>
+
+</body>
+
+
+</html>

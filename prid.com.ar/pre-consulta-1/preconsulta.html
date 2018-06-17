@@ -1,0 +1,313 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pre-consulta online</title>
+
+<link rel="stylesheet" href="estiloFormulario.css"/>
+
+<script src="codigojs.js" type="text/javascript"></script>
+
+<script src="jQuery/jQuery-1.12.3-uncompressed.js"></script>
+<script src="jQuery/jQuery-2.2.3-uncompressed.js"></script>
+
+</head>
+
+<body>
+
+<header id="titulo">
+	<h1>Pre-consulta online</h1>
+	<h3>Ingrese sus datos y marque las opciones que se correspondan con su estado de salud actual</h3>
+</header>
+
+<form action="" method="post">
+
+<div id="datos_usuario">
+	
+	 <article>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" value="" placeholder="Nombre" autofocus />
+            </article>
+        
+            <article>
+            <label for="apellido">Apellido</label> 
+            <input type="text" id="apellido" name="apellido" value="" placeholder="Apellido"  />
+            </article>
+        
+            <article>
+            <label for="dni">DNI</label> 
+            <input type="text" id="dni" name="dni" value="" placeholder="DNI" />
+            </article>
+        
+            <article>
+            <label for="localidad">Localidad</label> 
+            <input type="text" id="localidad" name="localidad" value="" placeholder="Localidad"/>
+            </article>
+    
+            <article>
+            <label for="email">E-mail</label> 
+            <input type="text" id="email" name="email" value="" placeholder="e-mail" />
+            </article>
+	
+</div>
+
+<h2>¿Cómo se siente?</h2> <br/>
+<div id="sintomas">
+	
+	<input id="fiebre" name="fiebre" type="checkbox" value="fiebre"> <label for="fiebre">Fiebre</label><br/>
+    	<div id="tipofiebre" class="tipofiebre">
+        	<label for="temperatura">La temperatura de su fibre es:</label><br/>
+            <input type="radio" name="temperatura" value="temperatura"><label for="temperatura">Moderada</label>
+            <input type="radio" name="temperatura" value="temperatura"><label for="temperatura">Alta</label><br/>
+        
+        	<label for="rapidez">La velocidad con que se presentó su fiebre fue:</label>
+ 			<input type="radio" name="rapidez" value="rapidez"><label for="rapidez">Gradual</label>&nbsp&nbsp&nbsp&nbsp
+            <input type="radio" name="rapidez" value="rapidez"><label for="rapidez">Repentina</label><br/>       
+    	</div>
+    
+    <input name="cefalea" type="checkbox" value="cefalea"/> <label for="cefalea"><dfn title="Dolor de cabeza intenso y persistente que va acompañado de sensación de pesadez.">Cefalea</dfn></label><br/>
+    
+	<input name="ojos" type="checkbox" value="ojos"/> <label for="ojos">Dolor detrás de los ojos</label><br/>
+    
+	<input name="mialgias" type="checkbox" value="mialgias"/> <label for="mialgias"><dfn title="Las mialgias consisten en dolores musculares que pueden afectar a uno o varios músculos del cuerpo y pueden acompañarse en ocasiones de debilidad o pérdida de la fuerza y dolor a la palpación.">Mialgias</dfn></label><br/>
+    
+	<input name="abdominal" type="checkbox" value="abdominal"/> <label for="musculos">Dolor abdominal</label><br/>
+    
+	<input name="respiracion" type="checkbox" value="respiracion"/> <label for="respiracion">Dificultad en la respiración</label><br/>
+    
+	<input name="diarrea" type="checkbox" value="diarrea"/> <label for="diarrea">Diarrea</label><br/>
+    
+	<input name="erupcion" type="checkbox" value="erupcion"/> <label for="erupcion"><dfn title="Una erupción cutánea es una hinchazón o enrojecimiento de la piel que implica un cambio de color o textura.">Erupción cutánea</dfn></label><br/>
+    
+     <input id="vomitos" name="vomitos" type="checkbox" value="vomitos"/> <label for="vomitos">Vómitos</label><br/>
+    	<div id="sangre">
+        	<label for="sangre">¿Son vómitos con sangre?</label><br/>
+            <input type="radio" name="sangre" value="sangre"><label for="sangre">Si</label>
+            <input type="radio" name="sangre" value="sangre"><label for="sangre">No</label><br/>
+        </div>
+
+    
+</div>
+
+<div id="tiempo">
+	
+	<label for="dias"><h2>¿Hace cuántos días se siente así?</h2></label> <br/>
+	<select id="dias" name="dias">
+	  <option value="" selected="selected">- Selecciona -</option>
+	  <option value="1">1 día</option>
+	  <option value="2">2 días</option>
+	  <option value="3">3 días</option>
+	  <option value="4">4 días</option>
+	  <option value="5">5 días</option>
+	  <option value="6">6 días</option>
+	  <option value="7">7 días</option>
+	  <option value="8">8 días</option>
+	  <option value="9">9 días</option>
+	  <option value="10">10 días</option>
+	  <option value="11">11 días</option>
+	  <option value="12">12 días</option>
+	  <option value="mas">Más de 12 días</option>
+	</select>
+</div>
+
+	<h2>¿Desea compartir su ubicación?</h2>
+	<button class="botongps" onclick="getLocation()">Compartir</button>
+	<h5>Conocerla nos ayudará a detectar posibles focos de infección y así prevenir la propagación de la enfermedad.</h5>
+
+	<p id="demo"></p>
+
+
+
+<div class="boton">
+	<input id="boton" type="button" name="enviar" value="Enviar pre-consulta" />
+</div>
+
+
+
+</form>
+
+<div id="resultados">
+
+	<div id="muchosdias">
+    	<h2>Usted tiene bajas probabilidades de tener dengue.</h2>
+        <h4>Esto se debe a que los síntomas del dengue no persiten más de 7 días</h4>
+        <p>De todas formas, le recomendamos que consulte a un médico ya que la presencia o ausencia de esta enfermedad sólo puede ser confirmada por un especialista.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Además, le brindamos los siguientes consejos:</p>
+        <ol>
+        	<li>No se automedique, no use aspirina, debido a que su efecto puede provocar hemorragias.</li>
+            <li>No use antibióticos porque el dengue es producido por un virus y los antibióticos solo atacan a las bacterias.</li>
+            <li>Beba mucha agua.</li>
+            <li>Haga reposo.</li>
+        </ol>
+    </div>
+
+	<div id="bajas">
+    	<h2>Usted tiene bajas probabilidades de tener dengue.</h2>
+        <p>De todas formas, le recomendamos que consulte a un médico ya que la presencia o ausencia de esta enfermedad sólo puede ser confirmada por un especialista.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Además, le brindamos los siguientes consejos:</p>
+        <ol>
+        	<li>No se automedique, no use aspirina, debido a que su efecto puede provocar hemorragias.</li>
+            <li>No use antibióticos porque el dengue es producido por un virus y los antibióticos solo atacan a las bacterias.</li>
+            <li>Beba mucha agua.</li>
+            <li>Haga reposo.</li>
+        </ol>
+        
+    </div>
+    
+    <div id="medias">
+    	<h2>Usted tiene medias probabilidades de tener dengue.</h2>
+        <p>De todas formas, le recomendamos que consulte a un médico ya que la presencia o ausencia de esta enfermedad sólo puede ser confirmada por un especialista.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Además, le brindamos los siguientes consejos:</p>
+        <ol>
+        	<li>No se automedique, no use aspirina, debido a que su efecto puede provocar hemorragias.</li>
+            <li>No use antibióticos porque el dengue es producido por un virus y los antibióticos solo atacan a las bacterias.</li>
+            <li>Beba mucha agua.</li>
+            <li>Haga reposo.</li>
+        </ol>
+    </div>
+    
+    <div id="altas">
+    	<h2>Usted tiene altas probabilidades de tener dengue.</h2>
+        <p>&nbsp;&nbsp;Le recomendamos que consulte a un médico ya que la presencia o ausencia de esta enfermedad sólo puede ser confirmada por un especialista.</p>
+        <p>&nbsp;Podemos ofrecerle prioridad en la asignación de un turno en un hospital especializado. Si así lo desea haga clic <a href="">aquí</a></p>
+        
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Mientras tanto, recomendamos que siga los siguientes consejos:</p>
+        <ol>
+        	<li>No se automedique, no use aspirina, debido a que su efecto puede provocar hemorragias.</li>
+            <li>No use antibióticos porque el dengue es producido por un virus y los antibióticos solo atacan a las bacterias.</li>
+            <li>Beba mucha agua.</li>
+            <li>Haga reposo.</li>
+        </ol>
+        
+    </div>
+    
+</div>
+
+
+
+</body>
+	
+<script type="text/javascript">
+
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    x.innerHTML = "Latitud: " + position.coords.latitude + 
+    "<br>Longitud: " + position.coords.longitude;
+}
+
+
+$(document).ready(function() {
+
+		
+	$("#fiebre").click(function(){
+		$("#tipofiebre").toggle(200);
+	});
+		
+	$("#vomitos").click(function(){
+		$("#sangre").toggle(200);
+	});
+	
+
+
+
+$(document).ready(function() {
+
+
+	$("#nombre").change(function(){
+		$("label[for='nombre']").css("animation","efectofade 1s forwards");
+	});
+	
+	$("#apellido").change(function(){
+		$("label[for='apellido']").css("animation","efectofade 1s forwards");
+	});
+	
+	$("#dni").change(function(){
+		$("label[for='dni']").css("animation","efectofade 1s forwards");
+	});
+	
+	$("#localidad").change(function(){
+		$("label[for='localidad']").css("animation","efectofade 1s forwards");
+	});
+	
+	$("#email").change(function(){
+		$("label[for='email']").css("animation","efectofade 1s forwards");
+	});
+
+
+});
+
+	
+	
+	
+	
+	
+	
+	$("select[name='dias']").change(function(){
+        dias=$("select[name='dias']").val();
+           
+    });
+	
+	
+	var sintomas=new Array();
+	
+	var i=0;
+	
+	$("#boton").click(function(){
+		
+		$("input:checkbox:checked").each(function(){
+			
+			sintomas[i]=$(this).val();
+			
+			i++;
+			
+			
+		});
+	
+		
+		
+		if (parseInt(dias)>7){
+		
+			$("#muchosdias").slideDown(600);
+			
+		}
+		
+		else{
+			
+			
+			if(sintomas.length <= 3){
+				
+				$("#bajas").slideDown(600);
+			};
+			
+			if(sintomas.length > 3 && sintomas.length<7){
+				
+				$("#medias").slideDown(600);
+				
+			};
+			
+			if(sintomas.length >= 7){
+				
+				$("#altas").slideDown(600);
+
+			};
+			
+		};
+		
+	});
+
+
+});
+
+
+</script>	
+
+</html>

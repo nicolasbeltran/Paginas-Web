@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media only screen and (max-width:1150px){
+	
+	
+	#contenido img{
+		display: none;
+	}
+	
+
+	}
+	
+@media only screen and (max-width:660px){
+	.texto{
+		margin-top: 24px;
+	}
+
+}
+	
+@media only screen and (max-width:560px){
+	 .texto{
+		font-size: 9px;
+	}
+}
+
+@media only screen and (max-width:440px){
+	.texto{
+		font-size: 8px;
+	}
+}
+
+@media only screen and (max-width:370px){
+		.texto{
+			margin-top: 40px;
+		font-size: 7px;
+	}
+}
+
+@media only screen and (max-width:615px){
+	h1{
+		font-size:4rem;
+		}
+	#logo{
+		width:340px;
+		}
+	#resplandor{
+		width: 140px;
+		height: 120px;
+		top: -270px;
+		margin: 20px auto;
+		}
+	#botones{
+		flex-direction:column;
+		width:100px;
+		margin:0 auto;
+		}
+	.boton{
+	margin:-155px auto 40px auto;
+	}
+
+		#ubicacion #laplata{
+			font-size:20px;
+			left: -24px;
+line-height: 27px;
+			
+		}
+}
+	
+@media only screen and (max-width:430px){
+	h1{
+		margin-bottom:30px;
+		font-size:3rem;
+		}
+	#logo{
+		width:280px;
+		}
+	#resplandor{
+		width: 100px;
+		height: 87px;
+		top: -210px;
+		margin: 20px auto;
+		}
+
+.boton{
+	margin:-115px auto 40px auto;
+	transform:scale(0.9,0.9)
+	}
+	
+	#ubicacion #laplata{
+			font-size:20px;
+			left: -24px;
+line-height: 27px;
+			
+		}
+
+
+}

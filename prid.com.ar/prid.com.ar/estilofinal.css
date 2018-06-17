@@ -1,0 +1,287 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+img[data-src] {
+	opacity: 0;
+}
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body{
+	background: -moz-radial-gradient(circle, #E1FDFD, #8CE5E5);
+	background: -webkit-radial-gradient(circle, #E1FDFD, #8CE5E5);
+	font-size:100%;
+	}
+	
+/*///////////////////////////////////////////BARRA DE NAVEGACION//////////////////////////////////////////*/
+	
+nav{
+	background: -moz-linear-gradient(left, #038791, #0489C3);
+	background: -webkit-linear-gradient(left, #038791, #0489C3);
+	width: 100%;
+	height:80px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index:3;
+	
+	}
+	
+	
+	/*--------LOGO--------*/
+	
+		.logo{
+			display:inline;
+			position:relative;
+			left:2.5%;
+			top:8px;
+			margin-right:0px;
+			cursor:pointer;
+			transition:transform 1s ease-in-out;
+	
+		}
+		
+			.logo:hover{
+				transform:rotate(360deg) scale(1.3,1.3);
+				
+				}
+		.logo2{
+			position:relative;
+			bottom:87px;
+			font-size:30px;
+			margin-left:0px;
+			cursor:pointer;
+			
+			}
+			
+			.logo3{
+				font-size:20px;
+				color:#33AAEC;
+				position:relative;
+				bottom:111px;
+				cursor:pointer;
+				line-height:2px;
+				
+				
+			}
+			
+		/*--------MENU LISTA--------*/
+			
+		nav h2{
+			width:25%;
+			position:relative;
+			left:7%;
+			bottom:80px;
+			color:white;
+			line-height:-25px;
+			}
+	
+		
+		nav ul{
+			display:flex;
+			justify-content:flex-end;
+			width:70%;
+			position:relative;
+			bottom:155px;
+			left:30%;
+			
+		}
+			
+		nav li{		
+			list-style-type:none;		
+			font-size:100%;
+		}
+	
+		nav a {
+			position:relative;
+		 	margin-right:20px;
+		    color: white;
+		    text-decoration: none;
+		}
+		
+		nav a:hover {
+		  color: white;
+		}
+		
+		nav a:before {
+		  content: "";
+		  position: absolute;
+		  width: 100%;
+		  height: 2px;
+		  bottom: 0;
+		  left: 0;
+		  top:21px;
+		  background-color: white;
+		  visibility: hidden;
+		  -webkit-transform: scaleX(0);
+		  transform: scaleX(0);
+		  -webkit-transition: all 0.3s ease-in-out 0s;
+		  transition: all 0.3s ease-in-out 0s;
+		}
+		
+		nav a:hover:before {
+		  visibility: visible;
+		  -webkit-transform: scaleX(1);
+		  transform: scaleX(1);
+		}
+
+/*///////////////////////////////////////////CUERPO//////////////////////////////////////////*/
+
+main{
+	text-align:center;
+	margin-bottom:100px;
+
+	}
+
+h1{
+	margin-top:100px;
+	margin-bottom:80px;
+	font-size:400%;
+	color:#068CC1;
+	background: -moz-radial-gradient(circle, #E1FDFD, #8CE5E5);
+	background: -webkit-radial-gradient(circle, #E1FDFD, #8CE5E5);
+	}
+	
+	header{
+		
+		margin-left:-10px;
+		margin-right:-10px;
+		}
+		
+h3{
+	font-size:300%;
+	color:#038791;
+	}
+	
+p{
+		margin-left:15%;
+	margin-right:15%;
+	text-align:justify;
+	font-size:1.2em;
+}
+
+
+/*///////////////////////////////////////////FOOTER//////////////////////////////////////////*/
+
+
+/*--------PRIMER FOOTER--------*/
+
+
+#footer1 {
+	margin-top:100px;
+	padding:15px 0px;
+	padding-bottom:35px;
+	background-color:#333333;
+	font-size:0.9em;
+	color:#ADADAD;
+	margin:-8px;
+	display:flex;
+	justify-content:space-around;
+	}
+	
+	
+	#footer1 h5{
+		font-size:1.2em;
+		color:white;
+		padding-bottom:20px;
+		border-bottom:solid #ADADAD thin;
+		}
+	#footer1 li{
+		list-style-type:none;
+		line-height:24px;
+	}
+	
+	#footer1 a{
+		text-decoration:none;
+		color:#ADADAD;
+		position:relative;
+		right:40px;
+		
+	}
+	
+		#footer1 a:hover{
+			color:white;
+			}
+	
+	
+	
+	#nombre, #comentario, #mail{
+		
+		font-size:1.2em;
+		padding:5px;
+		background-color:#787878;
+		margin-bottom:5px;
+		border:none;
+		border-radius:5px;
+		width:262px;
+		
+		}
+	
+	#nombre, #mail{
+		height:30px;
+		width:200px;
+		}
+	#comentario{
+		height:80px;
+		}
+		
+	#enviar{
+		width:120px;
+		height:25px;
+		border-radius:5px;
+		border:none;
+		transition:background-color linear 0.2s;
+		cursor:pointer;
+		}
+
+	#enviar:hover{
+		background-color:#068CC1;
+		}
+		
+		
+/*--------SEGUNDO FOOTER--------*/
+
+#footer2{
+	padding:3px 0px;
+	background-color:#282828;
+	color:#A9A9A6;
+	margin:-8px;
+	margin-top:-19px;
+	margin-bottom:-19px;
+	}
+	
+	#footer2 p{
+		position:relative;
+		right:111px;
+		}
+		
+		#footer2 a{
+			color:white;
+			text-decoration: none;
+			}
+
+		#footer2 a:before {
+		  content: "";
+		  position: absolute;
+		  width: 15%;
+		  height: 2px;
+		  top:21px;
+		  background-color: white;
+		  visibility: hidden;
+		  -webkit-transform: scaleX(0);
+		  transform: scaleX(0);
+		  -webkit-transition: all 0.3s ease-in-out 0s;
+		  transition: all 0.3s ease-in-out 0s;
+		}
+		
+		#footer2 a:hover:before {
+		  visibility: visible;
+		  -webkit-transform: scaleX(1);
+		  transform: scaleX(1);
+		}

@@ -1,0 +1,240 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media only screen and (max-width:1310px){
+	h1{
+		
+		}
+	
+	}
+	
+@media only screen and (max-width:1152px){
+	h1{
+		font-size:2rem;
+		}
+	#landing p{
+		font-size:15px;
+		}
+	#landing img[src='imagenes/foto_home3.png'] {
+    width: 300px;
+	}	
+	
+	/*	-------------------FORMULARIO--------------------*/
+	
+	#datos_usuario input{
+		width:100%;
+		}
+		
+	#datos_usuario textarea{
+		width:100%;
+		}
+	
+}
+@media only screen and (max-width:919px){
+		/*	-------------------MENU TRES RAYAS--------------------*/
+	
+	nav ul{
+		display:none;
+		}
+	#borde{
+		display:block;
+		}
+
+		/*	-------------------FOTO FONDO--------------------*/
+	
+	#landing img[src='imagenes/foto_home3.png'] {
+		width:0px;
+	}
+	#landing img[src='imagenes/foto_home4.png']{
+		visibility:visible;
+	}
+	
+/*	-------------------PRODUCTOS--------------------*/
+	#otrosproductos{
+	width:90%;
+	}
+	
+/*	-------------------SERVICIOS--------------------*/
+	#servicios{
+		height:450px;
+		}
+	
+	#servicios article div{
+		margin-bottom:50px;
+		}
+	
+}
+
+@media only screen and (max-width:830px){
+
+		/*------IMAGEN FONDO LANDING------*/
+
+		#landing img[src='imagenes/foto_home4.png']{
+		visibility:hidden;
+	}
+	
+		#landing{
+		height:475px;
+		}
+
+		#landing{
+		background-image: url(imagenes/foto-home-movil2.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	
+	/*#landing img[src='imagenes/foto-home-movil2.png']{
+			visibility: visible;
+			width: 100%;
+			z-index: 0;
+			position: absolute;
+			bottom: 34px;
+			margin-top: 37px;
+		}
+	*/
+
+	
+	#landing article{
+	width:90%;
+	padding:4%;
+	margin:50px auto;
+	outline:dotted thin #FFF;
+	margin-left: 1%;
+	}
+
+
+		
+		
+		
+
+		
+	/*	-------------------FORMULARIO--------------------*/
+	
+	#formulario{
+		width: 100%;
+		height: 623px;
+		padding: 50px 5%;
+		position: relative;
+		top: 620px;
+		}
+	#enviar{
+		margin-left:auto;
+		margin-right:auto;
+	}
+	iframe{
+		width:100%;
+		display:block;
+		position:relative;
+		bottom: 623px;
+
+	}
+	
+	/*	-------------------FOOTER--------------------*/
+	
+	footer{
+		position:relative;
+		top: 620px;
+	}
+	
+
+}
+
+@media only screen and (max-width:720px){
+	iframe{
+		height:400px;
+
+	}
+	
+	#formulario{
+top: 491px;
+height: 721px;
+		}
+		
+	footer{
+		top: 448px;
+		height: 43px;
+	}
+	
+}
+
+@media only screen and (max-width:600px){
+
+
+
+	/*#landing img[src='imagenes/foto-home-movil2.png']{
+			bottom: 118px;
+		}*/
+
+	#landing{
+		height:390px;
+		}
+	#landing article{
+		top:36px;
+		}
+	#landing article p{
+		font-size:16px;
+		}
+	html{
+		font-size:13px;
+		}
+	
+}
+	
+@media only screen and (max-width:575px){
+	/*	-------------------SERVICIOS--------------------*/
+	#servicios{
+		height:580px;
+		}
+}
+
+@media only screen and (max-width:500px){
+		html{
+			font-size:9px;
+			}
+		h1{
+			font-size:3rem;
+			}
+
+		#formulario h3{
+		font-size:3rem;
+		}
+			
+
+		#landing article{
+		font-size:16px;
+		top: 45px;
+		margin-top: 12%;
+		}
+
+		#landing article p{
+			font-size:14px;
+		}
+		
+
+}
+
+
+
+@media only screen and (max-width:400px){
+	
+	html{
+		font-size:7px
+		}
+	body{
+		font-size:14px;
+		}
+		#fleje figcaption{
+			font-size: 13px;
+		}
+	#prodyserv img{
+		width:250px;
+		}
+
+	#prodyserv figure{
+		width:250px;
+		}
+		
+	#clientes img{
+		width:250px;
+	}
+}
