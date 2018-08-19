@@ -215,14 +215,14 @@
     <section id="formulario">
             <h3>Haga su consulta y responderemos a la brevedad</h3>
 
-                  <?php
-                    $name = $_POST['nombre'];
+            <?php
+/*                    $name = $_POST['nombre'];
                     $email = $_POST['email'];
                     $message = $_POST['mensaje'];
                     $telefono = $_POST['telefono'];
-                    $from = 'Consulta: pagina web';     
-                    $to = 'j_filipo@hotmail.com'; 
-                    $subject = '!---------Consulta: pagina web------------!';
+                    $from = 'consulta@flejesdeacero.com.ar';     
+                    $to = 'nicobeltran92@gmail.com';
+                    $subject = 'consulta';
                             
                     $body = "From: $name\n Telefono: $telefono\n E-Mail: $email\n Message:\n $message";
                                 
@@ -231,8 +231,55 @@
                             echo '<p style="color:#6CBF28">Tu mensaje fue enviado con éxito</p>';
                         } else { 
                             echo '<p style="color:red">Hubo un error, inténtalo nuevamente</p>';
+                            print_r(error_get_last());
                         }
-                    }
+                    }*/
+
+                    use PHPMailer\PHPMailer\PHPMailer;
+					use PHPMailer\PHPMailer\Exception;
+
+					require 'PHPMailer/src/Exception.php';
+					require 'PHPMailer/src/PHPMailer.php';
+					require 'PHPMailer/src/SMTP.php';
+
+
+                    $mail = new PHPMailer(true);
+
+
+					//Datos gmail
+				    $mail->IsSMTP(); // telling the class to use SMTP
+				    $mail->SMTPAuth = true; // enable SMTP authentication
+				    $mail->SMTPSecure = "ssl"; // sets the prefix to the servier
+				    $mail->Host = "smtp.gmail.com"; // sets GMAIL as the SMTP server
+				    $mail->Port = 465; // set the SMTP port for the GMAIL server
+				    $mail->Username = "email.service.web.page.no.reply@gmail.com"; // GMAIL username
+				    $mail->Password = "email@service1"; // GMAIL password
+
+
+					//Typical mail data
+					$mail->AddAddress("j_filipo@hotmail.com", "flejesdeacero.com.ar");
+					$mail->SetFrom("j_filipo@hotmail.com", "flejesdeacero.com.ar");
+					$mail->Subject = "Consulta - flejesdeacero.com.ar";
+
+					$name = $_POST['nombre'];
+                    $email = $_POST['email'];
+                    $message = $_POST['mensaje'];
+                    $telefono = $_POST['telefono'];
+
+					$mail->Body = "From: $name\n Telefono: $telefono\n E-Mail: $email\n Message:\n $message";
+
+					if ($_POST['enviar']) {
+						try{
+						    $mail->Send();
+						    echo '<p style="color:#6CBF28">Tu mensaje fue enviado con éxito</p>';
+						} catch(Exception $e){
+						    //Something went bad
+						    echo '<p style="color:red">Hubo un error, inténtalo nuevamente</p>';
+						    echo "Fail - " . $mail->ErrorInfo;
+						}
+					}
+
+
             ?>
                   
 			
@@ -273,7 +320,8 @@
 <!------------------------------FOOTER---------------------------------->
 
 <footer>
-	<p>Página diseñada y desarollada por <a href="http://www.nicolasbeltran.com.ar" target="_blank" class="hvr-underline-reveal">Nicolás Beltrán</a></p>
+	<!-- <p>Página diseñada y desarrollada por <a href="http://www.nicolasbeltran.com.ar" target="_blank" class="hvr-underline-reveal">Nicolás Beltrán</a></p> -->
+	<p>Página diseñada y desarrollada por Nicolás Beltrán</p>
 </footer>
 
 <script type="text/javascript" src="jQuery/jQuery-2.2.3-compressed.js"></script>
