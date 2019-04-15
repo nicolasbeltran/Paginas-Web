@@ -1,0 +1,10 @@
+#footerContainer p{
+    width: fit-content;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+    #footerContainer p{
+        font-size: 12px;
+    }
+}

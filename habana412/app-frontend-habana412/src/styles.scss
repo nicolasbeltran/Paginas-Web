@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+//angular material default theme
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+:root {
+    --light-grey: #EDEDED;
+    --normal-grey: #B1B1B1;
+    --dark-grey: #8C8C8C;
+    --wine: #7E0444;
+  }
+  
+body{
+    font-family: 'Lato', sans-serif !important;
+}
+
+// color violeta
+a, p, span, small{
+    color: var(--dark-grey) !important;
+}
+
+h1,h2,h3,h4,h5{
+    color: var(--wine);
+}
