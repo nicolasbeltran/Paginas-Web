@@ -24,12 +24,14 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/rooms.json"
             ],
             "styles": [
               "src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/hover.css/css/hover-min.css"
+              "node_modules/hover.css/css/hover-min.css",
+              "src/habana-app-theme.scss"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",

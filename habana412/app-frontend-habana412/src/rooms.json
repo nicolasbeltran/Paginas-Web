@@ -1,0 +1,642 @@
+[
+    {
+        "id": 1,
+        "icons":[
+            "food",
+            "coffee-cup",
+            "wifi",
+            "computer-screen",
+            "laptop",
+            "shower",
+            "fan"
+        ],
+        "services":[
+            {
+                "serviceType" : "Baño",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"},
+                    { "item" : "Bidé"},
+                    { "item" : "Toallas/sábanas con sumplemento"}
+                ]
+            },
+            {
+                "serviceType" : "Habitación",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" }
+                ]
+            },
+            {
+                "serviceType" : "Visitas",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"}
+                ]
+            },
+            {
+                "serviceType" : "Cocina",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"},
+                    { "item" : "Bidé"},
+                    { "item" : "Toallas/sábanas con sumplemento"}
+                ]
+            },
+            {
+                "serviceType" : "Mascotas",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" }
+                ]
+            },
+            {
+                "serviceType" : "Zona de estar",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"}
+                ]
+            },
+            {
+                "serviceType" : "Equipo audio visual y tecnoloógico",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"}
+                ]
+            },
+            {
+                "serviceType" : "Comida y bebida",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"}
+                ]
+            },
+            {
+                "serviceType" : "Internet",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo. Ducha a ras del suelo. Ducha a ras del suelo" }
+                ]
+            },
+            {
+                "serviceType" : "Servicios",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"},
+                    { "item" : "Bidé"},
+                    { "item" : "Toallas/sábanas con sumplemento"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "icons":[
+            "food",
+            "coffee-cup",
+            "wifi",
+            "computer-screen"
+        ],
+        "services":[
+            {
+                "serviceType" : "Baño 2",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"},
+                    { "item" : "Bidé"},
+                    { "item" : "Toallas/sábanas con sumplemento"}
+                ]
+            },
+            {
+                "serviceType" : "Habitación",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" }
+                ]
+            },
+            {
+                "serviceType" : "Visitas",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"}
+                ]
+            },
+            {
+                "serviceType" : "Cocina",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"},
+                    { "item" : "Bidé"},
+                    { "item" : "Toallas/sábanas con sumplemento"}
+                ]
+            },
+            {
+                "serviceType" : "Mascotas",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" }
+                ]
+            },
+            {
+                "serviceType" : "Zona de estar",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"}
+                ]
+            },
+            {
+                "serviceType" : "Equipo audio visual y tecnoloógico",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"}
+                ]
+            },
+            {
+                "serviceType" : "Comida y bebida",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"}
+                ]
+            },
+            {
+                "serviceType" : "Internet",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo. Ducha a ras del suelo. Ducha a ras del suelo" }
+                ]
+            },
+            {
+                "serviceType" : "Servicios",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"},
+                    { "item" : "Bidé"},
+                    { "item" : "Toallas/sábanas con sumplemento"}
+                ]
+            }
+        ]
+    },
+    {
+        "id":3,
+        "icons":[
+            "food",
+            "coffee-cup",
+            "wifi",
+            "computer-screen",
+            "laptop",
+            "shower"
+        ],
+        "services":[
+            {
+                "serviceType" : "Baño 3",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"},
+                    { "item" : "Bidé"},
+                    { "item" : "Toallas/sábanas con sumplemento"}
+                ]
+            },
+            {
+                "serviceType" : "Habitación",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" }
+                ]
+            },
+            {
+                "serviceType" : "Visitas",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"}
+                ]
+            },
+            {
+                "serviceType" : "Cocina",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"},
+                    { "item" : "Bidé"},
+                    { "item" : "Toallas/sábanas con sumplemento"}
+                ]
+            },
+            {
+                "serviceType" : "Mascotas",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" }
+                ]
+            },
+            {
+                "serviceType" : "Zona de estar",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"}
+                ]
+            },
+            {
+                "serviceType" : "Equipo audio visual y tecnoloógico",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"}
+                ]
+            },
+            {
+                "serviceType" : "Comida y bebida",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"}
+                ]
+            },
+            {
+                "serviceType" : "Internet",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo. Ducha a ras del suelo. Ducha a ras del suelo" }
+                ]
+            },
+            {
+                "serviceType" : "Servicios",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"},
+                    { "item" : "Bidé"},
+                    { "item" : "Toallas/sábanas con sumplemento"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "icons":[
+            "food",
+            "coffee-cup",
+            "wifi",
+            "computer-screen",
+            "laptop",
+            "shower",
+            "fan"
+        ],
+        "services":[
+            {
+                "serviceType" : "Baño 4",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"},
+                    { "item" : "Bidé"},
+                    { "item" : "Toallas/sábanas con sumplemento"}
+                ]
+            },
+            {
+                "serviceType" : "Habitación",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" }
+                ]
+            },
+            {
+                "serviceType" : "Visitas",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"}
+                ]
+            },
+            {
+                "serviceType" : "Cocina",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"},
+                    { "item" : "Bidé"},
+                    { "item" : "Toallas/sábanas con sumplemento"}
+                ]
+            },
+            {
+                "serviceType" : "Mascotas",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" }
+                ]
+            },
+            {
+                "serviceType" : "Zona de estar",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"}
+                ]
+            },
+            {
+                "serviceType" : "Equipo audio visual y tecnoloógico",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"}
+                ]
+            },
+            {
+                "serviceType" : "Comida y bebida",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"}
+                ]
+            },
+            {
+                "serviceType" : "Internet",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo. Ducha a ras del suelo. Ducha a ras del suelo" }
+                ]
+            },
+            {
+                "serviceType" : "Servicios",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"},
+                    { "item" : "Bidé"},
+                    { "item" : "Toallas/sábanas con sumplemento"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "icons":[
+            "food",
+            "coffee-cup",
+            "wifi",
+            "computer-screen",
+            "laptop",
+            "shower",
+            "fan"
+        ],
+        "services":[
+            {
+                "serviceType" : "Baño 5",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"},
+                    { "item" : "Bidé"},
+                    { "item" : "Toallas/sábanas con sumplemento"}
+                ]
+            },
+            {
+                "serviceType" : "Habitación",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" }
+                ]
+            },
+            {
+                "serviceType" : "Visitas",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"}
+                ]
+            },
+            {
+                "serviceType" : "Cocina",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"},
+                    { "item" : "Bidé"},
+                    { "item" : "Toallas/sábanas con sumplemento"}
+                ]
+            },
+            {
+                "serviceType" : "Mascotas",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" }
+                ]
+            },
+            {
+                "serviceType" : "Zona de estar",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"}
+                ]
+            },
+            {
+                "serviceType" : "Equipo audio visual y tecnoloógico",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"}
+                ]
+            },
+            {
+                "serviceType" : "Comida y bebida",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"}
+                ]
+            },
+            {
+                "serviceType" : "Internet",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo. Ducha a ras del suelo. Ducha a ras del suelo" }
+                ]
+            },
+            {
+                "serviceType" : "Servicios",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"},
+                    { "item" : "Bidé"},
+                    { "item" : "Toallas/sábanas con sumplemento"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "icons":[
+            "food",
+            "coffee-cup",
+            "wifi",
+            "computer-screen",
+            "laptop",
+            "shower",
+            "fan"
+        ],
+        "services":[
+            {
+                "serviceType" : "Baño 6",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"},
+                    { "item" : "Bidé"},
+                    { "item" : "Toallas/sábanas con sumplemento"}
+                ]
+            },
+            {
+                "serviceType" : "Habitación",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" }
+                ]
+            },
+            {
+                "serviceType" : "Visitas",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"}
+                ]
+            },
+            {
+                "serviceType" : "Cocina",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"},
+                    { "item" : "Bidé"},
+                    { "item" : "Toallas/sábanas con sumplemento"}
+                ]
+            },
+            {
+                "serviceType" : "Mascotas",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" }
+                ]
+            },
+            {
+                "serviceType" : "Zona de estar",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"}
+                ]
+            },
+            {
+                "serviceType" : "Equipo audio visual y tecnoloógico",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"}
+                ]
+            },
+            {
+                "serviceType" : "Comida y bebida",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"}
+                ]
+            },
+            {
+                "serviceType" : "Internet",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo. Ducha a ras del suelo. Ducha a ras del suelo" }
+                ]
+            },
+            {
+                "serviceType" : "Servicios",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"},
+                    { "item" : "Bidé"},
+                    { "item" : "Toallas/sábanas con sumplemento"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "icons":[
+            "food",
+            "coffee-cup",
+            "wifi",
+            "computer-screen",
+            "laptop",
+            "shower",
+            "fan"
+        ],
+        "services":[
+            {
+                "serviceType" : "Baño 7",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"},
+                    { "item" : "Bidé"},
+                    { "item" : "Toallas/sábanas con sumplemento"}
+                ]
+            },
+            {
+                "serviceType" : "Habitación",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" }
+                ]
+            },
+            {
+                "serviceType" : "Visitas",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"}
+                ]
+            },
+            {
+                "serviceType" : "Cocina",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"},
+                    { "item" : "Bidé"},
+                    { "item" : "Toallas/sábanas con sumplemento"}
+                ]
+            },
+            {
+                "serviceType" : "Mascotas",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" }
+                ]
+            },
+            {
+                "serviceType" : "Zona de estar",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"}
+                ]
+            },
+            {
+                "serviceType" : "Equipo audio visual y tecnoloógico",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"}
+                ]
+            },
+            {
+                "serviceType" : "Comida y bebida",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"}
+                ]
+            },
+            {
+                "serviceType" : "Internet",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo. Ducha a ras del suelo. Ducha a ras del suelo" }
+                ]
+            },
+            {
+                "serviceType" : "Servicios",
+                "serviceItems": [
+                    { "item" : "Ducha a ras del suelo" },
+                    { "item" : "Papel higiénico"},
+                    { "item" : "Ropa de cama"},
+                    { "item" : "Bidé"},
+                    { "item" : "Toallas/sábanas con sumplemento"}
+                ]
+            }
+        ]
+    }
+]

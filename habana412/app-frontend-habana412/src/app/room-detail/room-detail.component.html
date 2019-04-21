@@ -1,0 +1,49 @@
+<div id="roomDetailContainer" class="container">
+    <div class="row">
+        <div class="col">
+            <h3 class="text-center">Rooms</h3>
+        </div>
+    </div>
+    
+    <div id="roomDetailSection" class="row my-5">
+        <div class="col-lg-6">
+            <img src="assets/images/rooms/{{room.id}}.jpg" alt="">
+            <div id="roomIcons">
+                <!-- <img src="https://img.icons8.com/ios/50/000000/cafe.png">
+                <img src="https://img.icons8.com/ios/50/000000/tableware.png">
+                <img src="https://img.icons8.com/ios/50/000000/wifi.png"> -->
+
+              <ng-container *ngFor="let icon of room.icons">
+                  <img src="assets/images/icons/{{icon}}.png" alt="">
+              </ng-container>
+                
+                <!-- Font Awesome Solid Icons -->
+              <!-- <ng-container *ngFor="let icon of room.icons">
+                  <i class="fas fa-{{icon}}"></i>
+              </ng-container> -->
+
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div id="roomServices">
+              <div *ngFor="let service of room.services">
+                <label class="mb-0 mt-3">{{service.serviceType}}</label>
+                <ul *ngFor="let serviceItem of service.serviceItems">
+                  <li>{{serviceItem.item}}</li>
+                </ul>
+              </div>
+            </div>
+          <!-- <div class="col-lg-3">
+            <div>
+              
+            </div>
+          </div> -->
+      
+    </div>
+
+    <div class="row w-100 mt-4 mb-3">
+        <div class="col text-center">
+            <app-airbnb-button></app-airbnb-button>
+        </div>
+    </div>
+</div>

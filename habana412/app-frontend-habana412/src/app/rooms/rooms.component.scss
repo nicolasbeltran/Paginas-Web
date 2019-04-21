@@ -1,0 +1,42 @@
+#roomsContainer h5{
+    font-size: 15px;
+}
+
+#roomsBorder{
+    border-bottom: solid var(--light-grey) 2px;
+    width: 1.5em;
+    margin: 5px auto 10px auto;
+}
+
+#roomsSection{
+    display: flex;
+    justify-content: center;
+}
+
+.roomBorder{
+    border-bottom: solid var(--wine) 1px;
+    width: 1em;
+}
+
+.roomItem{
+    position: relative;
+}
+
+.roomLink{
+    background-color: #FFF;
+    position: absolute;
+    top: 103px;
+    padding: 1px 5px 1px 3px;
+    left: 21px;
+    line-height:1.1 !important;
+    border-radius: 1px;
+}
+
+.roomLink h5{
+    font-size: 19px !important;
+    margin-bottom: 0;
+}
+
+.roomLink a{
+    font-size: 11px;
+}

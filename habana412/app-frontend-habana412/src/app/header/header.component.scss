@@ -1,11 +1,21 @@
-// #navbar{
-//     border-bottom: var(--light-grey) solid 1.5px;
-// }
+#navbar{
+    //background-color: bisque;
+    height: 53px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
 
 #navbarBorder{
     border-bottom: solid var(--light-grey) 2px;
     width: 41em;
-    margin: 10px auto 0 auto;
+    position: absolute;
+    top: 69px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+
 }
 
 #navbar a{
@@ -24,11 +34,41 @@
     border-color: var(--light-grey) !important;
 }
 
-  .hvr-underline-from-center:before {
-    bottom: 0;
-    background: var(--light-grey) !important;
-    height: 2px;
-  }
+.hvr-underline-from-center:before {
+bottom: 0;
+background: var(--light-grey) !important;
+height: 2px;
+}
+
+#translateLang{
+    position: absolute;
+    right: 44px;
+    top: 11px;
+}
+
+#translateButton{
+    background-color: var(--wine);
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#translateButton button{
+    letter-spacing: 2px;
+    color: var(--light-grey);
+    margin: 0;
+}
+
+#translateLabel{
+    background-color: var(--light-grey);
+    text-align: center;
+    padding: 1px 3px;
+}
+
+#translateLabel p{
+    font-size: 11px;
+    margin: 2px 0px;
+}
+
 
 @media only screen and (max-width: 992px) {
     #navbarBorder{

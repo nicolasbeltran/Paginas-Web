@@ -1,0 +1,33 @@
+#roomDetailSection ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#roomDetailSection li, #roomDetailSection label{
+    font-size: 11px;
+}
+
+#roomDetailSection label{
+    font-weight: 800;
+}
+
+#roomServices{
+    column-count: 2;
+    position: relative;
+    bottom: 21px;
+}
+
+#roomIcons img{
+    //color: var(--normal-grey);
+    //font-size: 23px;
+    margin: 12px 6px;
+}
+
+#roomIcons img{
+    //color: var(--normal-grey);
+    //font-size: 23px;
+    margin: 12px 12px 12px 0px;
+}
+
+

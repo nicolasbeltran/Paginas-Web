@@ -10,6 +10,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    document.getElementsByTagName("body")[0].style["background-image"] = "none";
   }
 
 }

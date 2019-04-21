@@ -1,3 +1,71 @@
-<p>
-  contact works!
-</p>
+<!-- <mat-grid-list id="contactSection" cols="4" rowHeight="100px">
+  <mat-grid-tile id="contactTitle" [colspan]="4" [rowspan]="1" [style.background]="lightblue">
+    <h2>Formulary</h2>
+  </mat-grid-tile>
+  <mat-grid-tile id="contactMessage" [colspan]="2" [rowspan]="4" [style.background]="blue">
+    <h2 class="ml-5">The best hotel reservation of Cuba</h2>
+  </mat-grid-tile>
+  <mat-grid-tile id="contactForm" [colspan]="2" [rowspan]="4" [style.background]="lightgreen">
+    <form [formGroup]="contactForm" class="ml-5">
+      <mat-form-field id="nameInput" themePalette=red appearance="outline">
+          <mat-label>NAME</mat-label>
+        <input matInput formControlName="name">
+      </mat-form-field>
+      <mat-form-field id="emailInput" appearance="outline">
+          <mat-label>EMAIL</mat-label>
+        <input matInput formControlName="email">
+      </mat-form-field>
+      <mat-form-field id="phoneInput" appearance="outline">
+          <mat-label>PHONE</mat-label>
+          <input matInput formControlName="phone">
+      </mat-form-field>
+      <mat-form-field id="commentaryInput" appearance="outline" >
+          <mat-label>COMMENTARY</mat-label>
+        <textarea matInput formControlName="commentary" rows="8"></textarea>
+      </mat-form-field>
+    </form>
+  </mat-grid-tile>
+  <mat-grid-tile id="contactAirbnb" [colspan]="4" [rowspan]="1" [style.background]="red">
+    <app-airbnb-button></app-airbnb-button>
+  </mat-grid-tile>
+</mat-grid-list> -->
+
+
+<div class="container">
+    <div class="row">
+        <div id="contactTitle" class="col">
+            <h3 class="text-center mb-4">Formulary</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div id="contactMessage" class="col">
+            <h2 class="ml-5">The best<br> hotel reservation<br> of Cuba</h2>
+        </div>
+        <div class="col">
+            <form [formGroup]="contactForm" class="ml-5">
+                <div class="form-row">
+                    <div class="form-group col-lg-4 mr-1">
+                        <label for="contactName">NAME</label>
+                        <input id="contactName" class="form-control ">
+                    </div>
+                    <div class="form-group col-lg-4 mr-1">
+                        <label for="contactEmail">EMAIL</label>
+                        <input type="email" id="contactEmail" formControlName="email" class="form-control ">
+                    </div>
+                </div>
+                <div class="form-group col-lg-8 px-0">
+                    <label for="contactPhone">ADRESS</label>
+                    <input type="text" id="contactPhone" formControlName="phone" class="form-control ">
+                </div>
+                <div class="form-group">
+                    <label for="contactCommentary">COMMENTARY</label>
+                    <textarea type="text" id="contactCommentary" formControlName="commentary" rows="6" class="form-control "></textarea>
+                </div>
+                <button id="contactSubmit" type="submit" class="buttonPrimary">SEND</button>
+            </form>
+        </div>
+    </div>
+      <div class="text-center mt-5 mb-2">
+          <app-airbnb-button></app-airbnb-button>
+      </div>
+</div>

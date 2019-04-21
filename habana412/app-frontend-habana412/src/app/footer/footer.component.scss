@@ -1,10 +1,36 @@
-#footerContainer p{
-    width: fit-content;
-    font-size: 14px;
+#footerContainer{
+    //background: lightgray;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
+
+ #footerContainer p{
+    font-size: 13px;
+ }
+
+ #shareButtons {
+    position: absolute;
+    right: 42px;
+    bottom: 14px;
+ }
+
+ #shareButtons p {
+    color: var(--wine) !important;
+    font-size: 13px;
+    font-weight: bold;
+ }
+
 
 @media only screen and (max-width: 600px) {
     #footerContainer p{
         font-size: 12px;
     }
 }
+
+@media  screen and (max-height: 670px) {
+    #footerContainer{
+        position: relative;
+    }
+    
+  }

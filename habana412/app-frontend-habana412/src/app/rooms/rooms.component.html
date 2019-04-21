@@ -1,3 +1,30 @@
-<p>
-  rooms works!
-</p>
+<div id="roomsContainer" class="container">
+    <div class="row">
+        <div class="col">
+            <h3 class="text-center">Rooms</h3>
+            <div id="roomsBorder"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h5 class="text-center font-weight-bolder">Select you room to book now.</h5>
+        </div>
+    </div>
+    <div id="roomsSection" class="row">
+      <div class="roomItem" *ngFor="let room of rooms">
+        <a [routerLink]="['/room-detail', room.id]">
+            <img class="d-block my-2 mx-2" src="assets/images/rooms/{{room.id}}.jpg" alt="" width="250px">
+            <div class="roomLink">
+              <h5>Room {{room.id}}</h5>
+              <div class="roomBorder"></div>
+              <a>Click for more</a>
+            </div>
+          </a>
+      </div>
+    </div>
+    <div class="row mt-2 mb-5">
+        <div class="col text-center">
+            <app-airbnb-button></app-airbnb-button>
+        </div>
+    </div>
+</div>
